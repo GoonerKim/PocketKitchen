@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0FFFF"
+    tools:context=".ui.activities.FreezeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/freeze_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0FFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_text"
+            android:layout_gravity="center"
+            android:text="냉동실"
+            android:fontFamily="@font/nanumpen"
+            android:textSize="25dp"
+            android:textColor="@android:color/black"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/freeze_activity_toolbar"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="-1.5dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/bg_cold_recyclerview">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/freeze_recyclerview_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:padding="16dp"
+                android:scrollbars="none" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-1.5dp"
+            android:layout_marginBottom="-1.5dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/bg_cold_recyclerview">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/freeze_recyclerview_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:padding="16dp"
+                android:scrollbars="none" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-1.5dp"
+            android:layout_marginBottom="-1.5dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/bg_cold_recyclerview">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/freeze_recyclerview_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:padding="16dp"
+                android:scrollbars="none" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-1.5dp"
+            android:layout_marginBottom="-1.5dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/bg_cold_recyclerview">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/freeze_recyclerview_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:padding="16dp"
+                android:scrollbars="none" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-1.5dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/outline_black">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/freeze_recyclerview_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:padding="16dp"
+                android:scrollbars="none" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/freeze_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/plus"
+        android:theme="@style/MyFloatingButton" />
+</RelativeLayout>

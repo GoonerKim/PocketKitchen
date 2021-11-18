@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.Refrigerator_MainActivity"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:layout_below="@+id/refrigerator_main_toolbar"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/refrigerator"/>
+
+        <TextView
+            android:id="@+id/freeze_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="430dp"
+            android:layout_marginLeft="-299dp"
+            android:layout_marginTop="170dp"
+            android:paddingTop="165dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="2dp"
+            android:text="냉동실"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cold_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="430dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="170dp"
+            android:paddingTop="165dp"
+            android:paddingLeft="9dp"
+            android:paddingRight="2dp"
+            android:text="냉장실"
+            android:textSize="30dp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/refrigerator_main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0FFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_text"
+            android:layout_gravity="center"
+            android:text="냉장고"
+            android:fontFamily="@font/nanumpen"
+            android:textSize="25dp"
+            android:textColor="@android:color/black"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</RelativeLayout>

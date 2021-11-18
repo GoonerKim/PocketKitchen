@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.RecipeActivity"
+    android:background="#FFFFFF"
+    android:layout_weight ="9">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/recipe_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFE4E1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_text"
+            android:layout_gravity="center"
+            android:text="레시피 검색"
+            android:fontFamily="@font/nanumpen"
+            android:textSize="25dp"
+            android:textColor="@android:color/black"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight ="9">
+
+    <EditText
+        android:id="@+id/ingredient_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="재료를 입력하세요."
+        android:singleLine="true"
+        android:textColorHint="#032149"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"
+        android:textColorLink="@color/common_google_signin_btn_text_dark_focused"
+        android:fontFamily="@font/nanumpen"
+        android:textSize="30dp">
+
+    </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight ="1">
+
+    <Button
+        android:id="@+id/recipe_search_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:text="검색하기"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/nanumpen"
+        android:textSize="40dp"
+        android:layout_below="@id/ingredient_input"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        >
+    </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

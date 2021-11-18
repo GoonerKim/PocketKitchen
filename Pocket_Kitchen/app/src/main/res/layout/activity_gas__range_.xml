@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.Gas_Range_Activity"
+    android:background="#FFFFFF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/gas_range_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFACD">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_text"
+            android:layout_gravity="center"
+            android:text="타이머"
+            android:fontFamily="@font/nanumpen"
+            android:textSize="25dp"
+            android:textColor="@android:color/black"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp">
+
+        <NumberPicker
+            android:id="@+id/h_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:baselineAligned="true"
+            android:inputType="number"
+            android:theme="@style/numberPickerCustom" />
+
+        <NumberPicker
+            android:id="@+id/m_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:inputType="number"
+            android:theme="@style/numberPickerCustom"
+            />
+
+        <NumberPicker
+            android:id="@+id/s_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:theme="@style/numberPickerCustom" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:textColor="#FF7F50"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/timer_start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="290dp"
+        android:background="#FFA07A"
+        android:text="시작"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/nanumpen"
+        android:textSize="30dp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/timer_pause_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFA07A"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="290dp"
+        android:text="중단"
+        android:fontFamily="@font/nanumpen"
+        android:textSize="30dp">
+    </Button>
+
+    <Button
+        android:id="@+id/timer_reset_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFA07A"
+        android:layout_marginLeft="295dp"
+        android:layout_marginTop="290dp"
+        android:text="RESET"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/nanumpen"
+        android:textSize="30dp">
+    </Button>
+
+    <TextView
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/timer_reset_btn"
+        android:layout_marginTop="40dp"
+        android:background="#FFFACD"
+        android:gravity="center_vertical"
+        android:text="주로 먹는 음식들"
+        android:paddingLeft="20dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/nanumpen"
+        android:textSize="35dp"/>
+
+    <ListView
+        android:id="@+id/cook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:dividerHeight="2dp"
+        android:divider="#FFFACD"
+        android:layout_below="@+id/list_item"/>
+
+</RelativeLayout>

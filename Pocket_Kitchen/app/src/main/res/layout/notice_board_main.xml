@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.Notice_Board_MainActivity">
+
+    <LinearLayout
+        android:id="@+id/button1_linearlayout"
+        android:layout_width="210dp"
+        android:layout_height="150dp"
+        android:background="#98FB98">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/button1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="-85dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/my_recipe"/>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="-65dp"
+                android:layout_marginTop="85dp"
+                android:text="나만의  레시피"
+                android:textAlignment="center"
+                android:fontFamily="@font/nanumpen"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button2_linearlayout"
+        android:layout_width="210dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="210dp"
+        android:background="#98FB98">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <ImageButton
+                android:id="@+id/button2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="-85dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/honey_tip" />
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="-65dp"
+                android:layout_marginTop="85dp"
+                android:text="생활의 꿀팁"
+                android:textAlignment="center"
+                android:fontFamily="@font/nanumpen"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button1_linearlayout"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:background="@drawable/community">
+
+        </ImageView>
+
+    </FrameLayout>
+
+</RelativeLayout>

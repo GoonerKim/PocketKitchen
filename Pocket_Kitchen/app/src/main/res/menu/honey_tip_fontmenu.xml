@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/honey_sans"
+        android:title="고딕"
+        android:icon="@android:drawable/ic_menu_save" />
+
+    <item
+        android:id="@+id/honey_serif"
+        android:title="궁서"
+        android:icon="@android:drawable/ic_menu_search" />
+
+    <item
+        android:id="@+id/honey_casual"
+        android:title="캐주얼"
+        android:icon="@android:drawable/ic_menu_edit" />
+
+</menu>
+
+

@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <item
+        android:id="@+id/black"
+        android:title="검정"
+        android:icon="@android:drawable/ic_menu_save"
+
+        />
+
+
+    <item
+
+        android:id="@+id/red"
+
+        android:title="빨강"
+
+        android:icon="@android:drawable/ic_menu_search" />
+
+
+
+    <item
+
+        android:id="@+id/blue"
+
+        android:title="파랑"
+
+        android:icon="@android:drawable/ic_menu_edit" />
+
+    <item
+
+        android:id="@+id/green"
+
+        android:title="초록"
+
+        android:icon="@android:drawable/ic_menu_edit" />
+
+
+
+</menu>
+
+
